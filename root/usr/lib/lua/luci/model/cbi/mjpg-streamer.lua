@@ -18,9 +18,15 @@ s=m:section(TypedSection, "mjpg-streamer", translate("mjpg streamer settings"))
 s.addremove=false
 s.anonymous=true
 
-s:tab("input",translate("Input plugin"))
+s:tab("input", translate("Input plugin"))
 s:tab("output_http", translate("HTTP output"))
 s:tab("output_file", translate("File output"))
+
+---s:tab("preview", ("video monitor"))
+---s:taboption("general", DummyValue,"opennewwindow" ,("<br /><p align=\"justify\"><script type=\"text/javascript\">function openwindowwebcam(){window.open('http://' + location.hostname + ':' + document.getElementById('cbid.mjpg-streamer.core.port').value + '/javascript_simple.html','webcam')}</script><input type=\"button\" class=\"cbi-button cbi-button-apply\" value=\"Play video\" onclick=\"openwindowwebcam()\" /></p>"))
+---s:taboption("general", DummyValue,"link" ,("<br /><a href=\"http://hi.baidu.com/f_fx/blog/category/Linux%20Openwrt\" target=\"_blank\">sutuo&#39;s blog</a>"))
+---videomonitor=s:taboption("preview", DummyValue,"video" ,("<br /><div id=\"videodiv\" ><p align=\"center\"><input type=\"button\" value=\"play\" class=\"cbi-button cbi-button-apply\" onclick=\"javascript:document.getElementById('videoframe').src ='http://' + location.hostname + ':' + document.getElementById('cbid.mjpg-streamer.core.port').value + '/javascript_simple.html'\" />&nbsp;&nbsp;&nbsp;&nbsp;<input type=\"button\" value=\"stop\" class=\"cbi-button cbi-button-reset\" onclick=\"javascript:document.getElementById('videoframe').src ='about:blank'\" /></p><iframe id=\"videoframe\" scrolling=\"no\" border=\"0\" name=\"lantk\" width=\"640\" height=\"480\" frameBorder=\"0\" src=\"about:blank\" align=\"center\"></iframe></div>"))
+
 
 enable=s:taboption("input", Flag, "enabled", translate("Enabled"))
 enable.rmempty=false
@@ -31,7 +37,7 @@ device.datatype = "device"
 device:value("/dev/video0", "/dev/video0")
 device:value("/dev/video1", "/dev/video1")
 device:value("/dev/video2", "/dev/video2")
-fps.optional = false
+device.optional = false
 
 resolution=s:taboption("input", Value, "resolution", translate("Resolution"))
 resolution.placeholder = "VGA"
@@ -44,11 +50,11 @@ resolution:value("960x720 (720p)","960x720")
 resolution:value("1280x720 (720p)","1280x720")
 resolution:value("1280x960 (960p)","1280x960")
 resolution:value("1920x1080 (1080p)","1920x1080")
-fps.optional = true
+resolution.optional = true
 
 fps=s:taboption("input", Value, "fps", translate("Frames per second"))
 fps.datatype = "uinteger"
-fps.placeholder = "1"
+fps.placeholder = "5"
 fps.datatype = "min(1)"
 fps.optional = true
 
@@ -67,16 +73,18 @@ led:value("on", translate("On"))
 led:value("off", translate("Off"))
 led:value("blink", translate("Blink"))
 led:value("auto", translate("Auto"))
-fps.optional = true
+led.optional = true
 
-http_enabled=s:taboption("output_http", Flag, "http_enabled", translate("Enabled"))
+http_enabled = s:taboption("output_http", Flag, "http_enabled", translate("Enabled"))
 
-www=s:taboption("output_http", Value, "www", translate("WWW folder"), translate("Folder that contains webpages"))
+www = s:taboption("output_http", Value, "www", translate("WWW folder"), translate("Folder that contains webpages"))
 www:depends("http_enabled", "1")
+www.datatype = "directory"
 
 port=s:taboption("output_http", Value, "port", translate("Port"), translate("TCP port for this HTTP server"))
 port:depends("http_enabled", "1")
 port.datatype = "port"
+port.placeholder = "8080"
 
 authentication=s:taboption("output_http", Flag, "authentication", translate("Authentication required"), translate("Ask for username and password on connect"))
 authentication:depends("http_enabled", "1")
