@@ -1,0 +1,141 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Allow ringbuffer to exceed limit by this amount"
+msgstr "Korlát átlépésének engedélyezése a puffer számára ennyivel"
+
+msgid "Ask for username and password on connect"
+msgstr "Felhasználói név és jelszó kérése kapcsolódáskor"
+
+msgid "Authentication required"
+msgstr "Azonosítás szükséges"
+
+msgid "Auto"
+msgstr "Automatikus"
+
+msgid "Automatic disabling of MJPEG mode"
+msgstr "Automatikusan letiltja az MJPEG módot"
+
+msgid "Blink"
+msgstr "Villogó"
+
+msgid "Check to save the stream to an mjpeg file"
+msgstr "Jelölje be az adatfolyam mjpeg fájlba történő mentéséhez"
+
+msgid "Command to run"
+msgstr "Futtatandó parancs"
+
+msgid "Device"
+msgstr "Eszköz"
+
+msgid "Do not initalize dynctrls of Linux-UVC driver"
+msgstr "Ne inicializálja a Linux-UVC meghajtó dynctrls-ét"
+
+msgid "Don't initalize dynctrls"
+msgstr "Ne inicializálja a dynctrls-t"
+
+msgid "Drop frames smaller then this limit"
+msgstr "Ennél kisebb képkockák eldobása"
+
+msgid "Enable YUYV format"
+msgstr "YUYV formátum engedélyezése"
+
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+msgid ""
+"Execute command after saving picture. Mjpg-streamer parse the filename as "
+"first parameter to your script."
+msgstr "Parancs futtatása a kép mentése után. Az Mjpg-streamer a scripnek "
+"első paraméterként átadja a fájlnevet."
+
+msgid "File output"
+msgstr "Fájl kimenet"
+
+msgid "Folder"
+msgstr "Mappa"
+
+msgid "Folder that contains webpages"
+msgstr "A weboldalakat tartalmazó mappa"
+
+msgid "Frames per second"
+msgstr "Képkocka/másodperc"
+
+msgid "HTTP output"
+msgstr "HTTP kimenet"
+
+msgid "Input plugin"
+msgstr "Bemenet"
+
+msgid "Interval between saving pictures"
+msgstr "Képek mentése közti időtartam"
+
+msgid "JPEG compression quality"
+msgstr "JPEG tömörítés minősége"
+
+msgid "Led control"
+msgstr "Led vezérlés"
+
+msgid "Max. number of pictures to hold"
+msgstr "Megtartandó képek maximális száma"
+
+msgid "Mjpeg output"
+msgstr "Mjpeg kimenet"
+
+msgid ""
+"Mjpg streamer is a streaming application for Linux-UVC compatible webcams"
+msgstr "Az Mjpg streamer egy streaming alkalmazás Linux-UVC kompatibilis webkamerákhoz"
+
+msgid "Mjpg streamer settings"
+msgstr "Mjpg streamer beállítások"
+
+msgid "Mjpg-streamer"
+msgstr "Mjpg-streamer"
+
+msgid "Off"
+msgstr "Ki"
+
+msgid "On"
+msgstr "Be"
+
+msgid "Password"
+msgstr "Jelszó"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Resolution"
+msgstr "Felbontás"
+
+msgid "Ring buffer size"
+msgstr "Puffer méret"
+
+msgid "Exceed"
+msgstr "Túllépés"
+
+msgid "Set folder to save pictures"
+msgstr "Állítsa be a képek mentési könyvtárát"
+
+msgid "Set the inteval in millisecond"
+msgstr "Állítsa be az időtartamot ezredmásodpercben"
+
+msgid ""
+"Set the minimum size if the webcam produces small-sized garbage frames. May "
+"happen under low light conditions"
+msgstr "Állísa be a minimális méretet, ha a webkamera kis méretű 'szemetes' "
+"képeket készít. Rossz fényviszonyok között is előfordulhat"
+
+msgid ""
+"Set the quality in percent. This setting activates YUYV format, disables "
+"MJPEG"
+msgstr "Állítsa be a minőséget %-ban. Ez a beállítás aktiválja a YUYV "
+"formátumot és tiltja az MJPEG-et"
+
+msgid "TCP port for this HTTP server"
+msgstr "A HTTP szerver TCP portja"
+
+msgid "Username"
+msgstr "Felhasználónév"
+
+msgid "WWW folder"
+msgstr "WWW könyvtár"
