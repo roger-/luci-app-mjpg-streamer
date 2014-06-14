@@ -12,9 +12,9 @@ You may obtain a copy of the License at
 $Id$
 ]]--
 
-m = Map("mjpg-streamer", "Mjpg-streamer", translate("Mjpg streamer is a streaming application for Linux-UVC compatible webcams"))
+m = Map("mjpg-streamer", "mjpg-streamer", translate("mjpg streamer is a streaming application for Linux-UVC compatible webcams"))
 
-s=m:section(TypedSection, "mjpg-streamer", translate("Mjpg streamer settings"))
+s=m:section(TypedSection, "mjpg-streamer", translate("mjpg streamer settings"))
 s.addremove=false
 s.anonymous=true
 

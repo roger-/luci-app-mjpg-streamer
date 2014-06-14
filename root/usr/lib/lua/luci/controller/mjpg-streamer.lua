@@ -12,14 +12,14 @@ You may obtain a copy of the License at
 $Id$
 ]]--
 
-module("luci.controller.mjpg_streamer", package.seeall)
+module("luci.controller.mjpg-streamer", package.seeall)
 
 function index()
 	if not nixio.fs.access("/etc/config/mjpg-streamer") then
 		return
 	end
 
-	local page = entry({"admin", "services", "mjpg_streamer"}, cbi("mjpg_streamer"), _("Mjpg-streamer"))
+	local page = entry({"admin", "services", "mjpg-streamer"}, cbi("mjpg-streamer"), _("mjpg-streamer"))
 	page.dependent = true
 
 end
