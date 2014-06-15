@@ -64,7 +64,7 @@ start_instance() {
 
 		config_get username "$s" 'username'
 		config_get password "$s" 'password'
-		[ -n "$username" ] && [ -n "$password" ] output_arg="${output_arg} -c ${username}:${password}"
+		[ -n "$username" ] && [ -n "$password" ] && output_arg="${output_arg} -c ${username}:${password}"
 	fi
 
 	if [ -z "$output_arg" ]; then
