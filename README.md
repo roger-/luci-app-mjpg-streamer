@@ -1,3 +1,8 @@
+# Notice
+
+A version of this has been integrated into the OpenWrt LuCI package feed [here](https://github.com/openwrt/luci/tree/master/applications/luci-app-mjpg-streamer). Please use/modify that one instead!
+
+
 # LuCI module for MJPG-streamer
 
 Let's you configure MJPG-streamer from the LuCI web UI and preview HTTP streams.
